@@ -1,0 +1,284 @@
+body {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 14px;
+}
+h1 {
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+}
+ul {
+   padding: 0;
+   margin: 0; 
+}
+ul li {
+    list-style: none;
+}
+.wrap {
+    max-width: 940px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #5b6169;
+    height: 90px;
+    padding-top: 27px;
+}
+.menu a {
+    font-size: 16px;
+    color: #fff;
+}
+.btn {
+    display: none;
+}
+.btn a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    bottom: 50px;
+    left: 90%;
+}
+.btn span,
+.btn span::before,
+.btn span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
+}
+.btn span::before,
+.btn span::after {
+    content: '';
+    transition: .2s;
+}
+.btn span::before {
+    transform: translateY(-5px);
+}
+.btn span::after {
+    transform: translateY(5px);
+}
+.btn-active span {
+    height: 0;
+}
+.btn-active span::before {
+    transform: rotate(45deg);
+}
+.btn-active span::after {
+    transform: rotate(-45deg);
+}
+  
+/*section .iphone*/
+section {
+    min-height: 470px;
+}
+.iphone {
+    background: url(../img/bg-1.png);
+    background-size: cover
+}
+/*           Slider                */
+.iphone__slider {
+    position: relative;
+    bottom: -100px;
+}
+.iphone__img {
+    margin-top: 40px;
+    position: relative;
+    z-index: 10;
+}
+.iphone__img {
+    height: 440px;
+}
+.carousel {
+    position: absolute;
+    top: 53px;
+    left: 96px;
+}
+.carousel-item img {
+    height: 418px;
+    width: 195px;
+    border-radius: 10px;
+}
+
+.carousel-indicators {
+    
+}
+
+/*         END  Slider                */
+
+.iphone__title {
+    color: #fff;
+}
+.iphone__text {
+    font-size: 18px;
+    color: #335565;
+}
+.iphone__btn {
+    font-size: 18px;
+    color: #fff;
+    background-color: #72abda;
+    border: none;
+    width: 170px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.iphone__btn:hover {
+    transform: scale(1.1);
+    background-color: #3b8ed2;
+}
+
+/*services*/
+
+.services {
+    position: relative;
+    z-index: 20;
+    background-color: #fff;
+    padding: 30px 0;
+}
+.line {
+    background-color: #5b6169;
+    height: 1px;
+    margin-top: 30px;
+}
+.sevices__title {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 55px;
+    color: #5b6169;
+    font-size: 42px;
+}
+.services__box {
+    text-align: center;
+}
+.services__box-title {
+    padding: 35px 0 30px;
+    color: #3674ba;
+    font-size: 22px;
+}
+.services__box-text {
+    color: #4e4e4e;
+}
+.services__box-btn {
+    color: #fff;
+    background-color: #3674ba;
+    border: none;
+    width: 127px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.services__box-btn:hover {
+    transform: scale(1.1);
+    background-color: #0b5fbf;
+}
+
+/*about*/
+.about {
+    background-color: #d1d1d1;
+    padding: 30px 0;
+}
+.about__title {
+    color: #7c7c7c;
+}
+.about__text {
+    color: #4e4e4e;
+}
+.about__skills-title {
+    color: #3674ba;
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+.progress {
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #828181;
+    border-radius: none !important;
+}
+.progress-bar {
+    background-color: #3674ba; 
+}
+iframe {
+    margin-bottom: 10px;
+}
+.form-group {
+    margin-bottom: 10px;
+    border-radius: none;
+}
+.form-control {
+    border-radius: none !important;
+}
+/* footer */
+.footer {
+    height: 100px;
+    text-align: center;
+    padding-top: 40px;
+}
+/* RESPONSIVE */
+
+/* @include make-col-ready();  */
+@media screen and (max-width: 990px) {
+    .logo {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .logo img {
+        width: 150px;
+    }
+    .header {
+        height: 150px;
+        width: 100%;
+        padding-top: 27px;
+    }
+    .menu {
+        padding-top: 20px;
+        width: 70%;
+        margin: 0 auto; 
+    }
+    .iphone__slider {
+        bottom: 20px;
+    }
+    .line {
+        display: none;
+    }
+    .sevices__title {
+        margin: 0;
+        padding: 0;
+    }
+    .services__box {
+        margin: 20px 0;
+    }
+    .wrap {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrap {
+        width: 100%;
+    }
+    .iphone__slider {
+        margin: 0 auto;
+        width: 300px;
+    }
+    .iphone__p {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .btn {
+        display: block;
+    }
+    .menu {
+        transition: 1s;
+        transform: scaleX(0) translateX(20%);
+        opacity: 0;
+    }
+    .menu-active .menu{
+        transform: scaleX(1) translateX(0%);
+        opacity: 1;   
+    }
+}
